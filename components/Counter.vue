@@ -1,0 +1,16 @@
+<template>
+  <div class="">
+    <button @click="increment">increment</button>
+    {{ count }}
+    <button @click="decrement">decrement</button>
+  </div>
+</template>
+<script setup>
+const count = ref(0)
+function increment () {
+  count.value++
+}
+function decrement () {
+  count.value--
+}
+</script>
